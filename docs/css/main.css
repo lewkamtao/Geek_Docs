@@ -1,0 +1,75 @@
+@import "https://30sec.oss-cn-guangzhou.aliyuncs.com/public/SanCFont.css";
+
+/* 字体 */
+
+html {
+    font-family: "Noto Sans SC";
+}
+
+* {
+    font-family: "Noto Sans SC";
+}
+
+section.cover {
+    background-color: #000 !important;
+}
+
+.app-name-link {
+    font-weight: bold;
+}
+
+.cover-main img {
+    width: 150px;
+}
+
+
+/* 这个是主体的框架，限制不能太大 */
+
+.markdown-section {
+    max-width: 1024px !important;
+    margin: 0px auto;
+    padding: 35px 50px 35px 35px;
+    box-sizing: border-box;
+}
+
+section.cover {
+    background: #fff !important;
+    border-bottom: 1px #eee solid;
+}
+
+@media screen and (max-width: 800px) {
+    .markdown-section {
+        padding: 20px 20px 100px 20px;
+    }
+    .sidebar-toggle {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -30px);
+        width: 100px !important;
+        height: 40px !important;
+        opacity: 0.9;
+        border-radius: 4px;
+        background-color: rgb(98, 196, 143) !important;
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidebar-toggle span {
+        display: none;
+        background-color: #fff !important;
+    }
+    .sidebar-toggle::after {
+        content: "打开目录";
+        position: absolute;
+        font-size: 16px;
+        left: 50%;
+        color: #fff;
+        white-space: nowrap;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .close .sidebar-toggle::after {
+        content: "关闭目录";
+    }
+}
